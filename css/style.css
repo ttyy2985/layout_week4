@@ -3,6 +3,10 @@
   font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", "Sans-Serif";
 }
 
+button:focus {
+  outline: none;
+}
+
 .navbar-nav {
   border: 1px solid #fff;
 }
@@ -42,6 +46,24 @@ img {
   color: #650300;
 }
 
+.title {
+  font-size: 24px;
+  padding: 32px 0px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 48px;
+    padding: 64px 0px;
+  }
+}
+
 .banner {
   height: 394px;
   background-image: url("../img/68.png");
@@ -52,6 +74,38 @@ img {
 @media (min-width: 768px) {
   .banner {
     height: 840px;
+  }
+}
+
+.banner .benner-subtitle {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .banner .benner-subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .benner-subtitle {
+    font-size: 36px;
+  }
+}
+
+.banner .banner-title {
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .banner .banner-title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .banner-title {
+    font-size: 64px;
   }
 }
 
