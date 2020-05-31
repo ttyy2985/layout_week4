@@ -33,6 +33,16 @@ $phone-media: 576px;
 button:focus{
     outline: none;
 }
+.form-control{
+    border: 1px solid #000;
+    &:focus{
+        border-color: $text-color;
+        box-shadow:0 0 0 0.05rem $red;
+    }
+}
+.form-check-input{
+    border: 1px solid #000;
+}
 .navbar-nav{
     .nav-item{
         border-bottom: 1px solid #fff;
@@ -153,4 +163,19 @@ img{
     margin:0 auto;
     margin-bottom:10px;
   }
+}
+
+.footer{
+    .fas,.far,.fab{
+        font-size: 24px; 
+        margin-right: 8px;
+        @include pad-width(){
+            margin-right: 12px;
+        }
+        @include pc-width(){
+            font-size: 36px;
+            margin-right: 23px;
+        }
+    }
+   
 }

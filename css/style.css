@@ -7,6 +7,20 @@ button:focus {
   outline: none;
 }
 
+.form-control {
+  border: 1px solid #000;
+}
+
+.form-control:focus {
+  border-color: #650300;
+  -webkit-box-shadow: 0 0 0 0.05rem #AA0601;
+          box-shadow: 0 0 0 0.05rem #AA0601;
+}
+
+.form-check-input {
+  border: 1px solid #000;
+}
+
 .navbar-nav {
   border: 1px solid #fff;
 }
@@ -181,5 +195,23 @@ img {
   height: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+
+.footer .fas, .footer .far, .footer .fab {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .footer .fas, .footer .far, .footer .fab {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .fas, .footer .far, .footer .fab {
+    font-size: 36px;
+    margin-right: 23px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
