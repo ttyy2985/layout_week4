@@ -187,7 +187,30 @@ img {
 }
 
 .banner-sm {
-  height: 304px;
+  height: 143px;
+  background-image: url("../img/72.png");
+}
+
+.banner-sm .banner-title {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .banner-sm {
+    height: 304px;
+  }
+  .banner-sm .banner-title {
+    margin-right: 16px;
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-sm .banner-title {
+    margin-right: 10.1px;
+    font-size: 64px;
+  }
 }
 
 .box .img-container {
@@ -253,5 +276,56 @@ img {
 
 .small-text {
   font-size: 14px;
+}
+
+.info .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .info .title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .info .title {
+    font-size: 32px;
+  }
+}
+
+.accordion {
+  margin-bottom: 56px;
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    margin-bottom: 104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .accordion {
+    margin-bottom: 156px;
+  }
+}
+
+.accordion .card {
+  border-color: #000;
+}
+
+.accordion .card .card-header {
+  border-bottom: 1px solid #000;
+  color: #000;
+  margin-bottom: 0px;
+}
+
+.accordion .card .card-header .btn-link {
+  font-weight: bold;
+}
+
+.accordion .card .card-body {
+  padding: 1.625rem 2rem;
 }
 /*# sourceMappingURL=style.css.map */

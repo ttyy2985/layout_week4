@@ -153,7 +153,26 @@ img{
     }
 }
 .banner-sm{
-    height: 304px;
+    height: 143px;
+    background-image:url('../img/72.png');
+    .banner-title{
+        font-size: 28px;
+        margin-right: 8px;
+       
+    }
+    @include pad-width(){
+        height: 304px;
+        .banner-title{
+            margin-right: 16px;
+            font-size: 48px;
+        }
+    }
+    @include pc-width(){
+        .banner-title{
+            margin-right: 10.1px;
+            font-size: 64px;
+        }
+    } 
 }
 
 .box{
@@ -204,4 +223,41 @@ img{
 
 .small-text{
     font-size: 14px;
+}
+.info{
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+        @include pad-width(){
+            font-size: 28px;
+        }
+        @include pc-width(){
+            font-size: 32px;
+        }
+    }
+}
+.accordion{
+    margin-bottom: 56px;
+    @include pad-width(){
+        margin-bottom: 104px;
+    }
+    @include pc-width(){
+        margin-bottom: 156px;
+    }
+    .card{
+        border-color:#000;
+        .card-header{
+            border-bottom: 1px solid #000;
+            color:#000;
+            margin-bottom: 0px;
+            .btn-link{
+                font-weight: bold;
+            }
+           
+        }
+        .card-body{
+            padding: 1.625rem 2rem;
+        }
+    }
+    
 }
