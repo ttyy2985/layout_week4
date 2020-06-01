@@ -1,6 +1,6 @@
-$pink:#AA06010D;
-$red:#AA0601;
-$text-color:#650300;
+$pink: #aa06010d;
+$red: #aa0601;
+$text-color: #650300;
 //先針對media queries的width設為變數
 $pc-media: 992px;
 $pad-media: 768px;
@@ -8,256 +8,262 @@ $phone-media: 576px;
 
 //手機
 @mixin phone-width() {
-  @media (min-width: $phone-media) {
-    @content;
-  }
+    @media (min-width: $phone-media) {
+        @content;
+    }
 }
 //平板
 @mixin pad-width() {
-  @media (min-width: $pad-media) {
-    @content;
-  }
+    @media (min-width: $pad-media) {
+        @content;
+    }
 }
 //電腦
 @mixin pc-width() {
-  @media (min-width: $pc-media) {
-    @content;
-  }
+    @media (min-width: $pc-media) {
+        @content;
+    }
 }
 
-*{
-  line-height:1.5;
-  font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", "Sans-Serif";
-  // border:1px solid #000;
+* {
+    line-height: 1.5;
+    font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", "Sans-Serif";
+    // border:1px solid #000;
 }
-button:focus{
+button:focus {
     outline: none;
 }
-.form-control{
+.form-control {
     border: 1px solid #000;
-    &:focus{
+    &:focus {
         border-color: $text-color;
-        box-shadow:0 0 0 0.05rem $red;
+        box-shadow: 0 0 0 0.05rem $red;
     }
 }
-.form-check-input{
+.form-check-input {
     border: 1px solid #000;
 }
-.navbar-nav{
-    .nav-item{
+.navbar-nav {
+    .nav-item {
         border-bottom: 1px solid #fff;
     }
-    border:1px solid #fff;
-    @include pc-width(){
-        border:0;
-        .nav-item{
-            border-bottom:0;
+    border: 1px solid #fff;
+    @include pc-width() {
+        border: 0;
+        .nav-item {
+            border-bottom: 0;
         }
     }
 }
-.classic{
-    .content{
-        &:nth-child(2) img{
+.classic {
+    .content {
+        &:nth-child(2) img {
             filter: grayscale(100%);
-            &:hover{
+            &:hover {
                 filter: grayscale(0%);
             }
         }
         font-size: 28px;
         text-transform: uppercase;
-        color:#ffffff;
-        @include pad-width(){
-            color:$red;
+        color: #ffffff;
+        @include pad-width() {
+            color: $red;
         }
-        @include pc-width(){
+        @include pc-width() {
             font-size: 40px;
-            color:$red;
+            color: $red;
         }
-        .col-lg-4{
+        .col-lg-4 {
             position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            @include pad-width(){
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include pad-width() {
                 position: static;
-                top:0;
-                left:0;
-                transform: translate(0,0);
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
             }
         }
     }
-    
 }
-.ul{
-  list-style:none;
-  padding-left:0;
+.ul {
+    list-style: none;
+    padding-left: 0;
 }
-img{
-  display: block;
-  max-width: 100%;
+img {
+    display: block;
+    max-width: 100%;
 }
-.bg-red{
+.bg-red {
     background-color: $red;
 }
-.bg-pink{
-  background-color: $pink;
+.bg-pink {
+    background-color: $pink;
 }
-.text-red{
-    color:$text-color;
+.text-red {
+    color: $text-color;
 }
-.container-space{
+.container-space {
     padding-bottom: 24px;
-    @include pad-width(){
+    @include pad-width() {
         padding-bottom: 40px;
     }
-    @include pc-width(){
+    @include pc-width() {
         padding-bottom: 80px;
     }
 }
-.title{
+.title {
     font-size: 24px;
-    padding:32px 0px;
-    @include pad-width(){
+    padding: 32px 0px;
+    @include pad-width() {
         font-size: 32px;
     }
-    @include pc-width(){
+    @include pc-width() {
         font-size: 48px;
-        padding:64px 0px;
+        padding: 64px 0px;
     }
 }
-.banner{
-    @include pad-width(){
-        height:840px;
+.banner {
+    @include pad-width() {
+        height: 840px;
     }
     height: 394px;
-    background-image:url('../img/68.png');
+    background-image: url("../img/68.png");
     background-position: center center;
     background-size: cover;
-    .benner-subtitle{
+    .benner-subtitle {
         font-size: 16px;
-        @include pad-width(){
+        @include pad-width() {
             font-size: 20px;
         }
-        @include pc-width(){
+        @include pc-width() {
             font-size: 36px;
         }
     }
-    .banner-title{
+    .banner-title {
         font-size: 32px;
-        @include pad-width(){
+        @include pad-width() {
             font-size: 48px;
         }
-        @include pc-width(){
+        @include pc-width() {
             font-size: 64px;
         }
     }
 }
-.banner-sm{
+.banner-sm {
     height: 143px;
-    background-image:url('../img/72.png');
-    .banner-title{
+    background-image: url("../img/72.png");
+    .banner-title {
         font-size: 28px;
         margin-right: 8px;
-       
     }
-    @include pad-width(){
+    @include pad-width() {
         height: 304px;
-        .banner-title{
+        .banner-title {
             margin-right: 16px;
             font-size: 48px;
         }
     }
-    @include pc-width(){
-        .banner-title{
+    @include pc-width() {
+        .banner-title {
             margin-right: 10.1px;
             font-size: 64px;
         }
-    } 
+    }
 }
 
-.box{
-  .img-container{
-    width: 100px;
-    height: 100px;
-    margin:0 auto;
-    margin-bottom:10px;
-  }
+.box {
+    .img-container {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 }
 
-.footer{
-    padding:24px 15px;
-        @include pad-width(){
-            padding:40px 15px;
+.footer {
+    .footer-title {
+        font-size: 16px;
+        @include pad-width() {
+            font-size: 20px;
         }
-        @include pc-width(){
-            padding:48px 15px;
+        @include pc-width() {
+            font-size: 36px;
         }
-    .fas,.far,.fab{
-        font-size: 24px; 
+    }
+    padding: 24px 15px;
+    @include pad-width() {
+        padding: 40px 15px;
+    }
+    @include pc-width() {
+        padding: 48px 15px;
+    }
+    .fas,
+    .far,
+    .fab {
+        font-size: 24px;
         margin-right: 8px;
-        @include pad-width(){
+        @include pad-width() {
             margin-right: 12px;
         }
-        @include pc-width(){
+        @include pc-width() {
             font-size: 36px;
             margin-right: 23px;
         }
     }
-    .copyright{
+    .copyright {
         font-size: 14px;
-        @include pad-width(){
+        @include pad-width() {
             font-size: 16px;
         }
     }
-   
 }
 
-.logo-image{
-    img{
+.logo-image {
+    img {
         width: 46px;
-        @include pc-width(){
-           width: 80px;
+        @include pc-width() {
+            width: 80px;
         }
     }
 }
 
-.small-text{
+.small-text {
     font-size: 14px;
 }
-.info{
-    .title{
+.info {
+    .title {
         font-size: 20px;
         font-weight: bold;
-        @include pad-width(){
+        @include pad-width() {
             font-size: 28px;
         }
-        @include pc-width(){
+        @include pc-width() {
             font-size: 32px;
         }
     }
 }
-.accordion{
+.accordion {
     margin-bottom: 56px;
-    @include pad-width(){
+    @include pad-width() {
         margin-bottom: 104px;
     }
-    @include pc-width(){
+    @include pc-width() {
         margin-bottom: 156px;
     }
-    .card{
-        border-color:#000;
-        .card-header{
+    .card {
+        border-color: #000;
+        .card-header {
             border-bottom: 1px solid #000;
-            color:#000;
+            color: #000;
             margin-bottom: 0px;
-            .btn-link{
+            .btn-link {
                 font-weight: bold;
             }
-           
         }
-        .card-body{
+        .card-body {
             padding: 1.625rem 2rem;
         }
     }
-    
 }

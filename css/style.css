@@ -13,8 +13,8 @@ button:focus {
 
 .form-control:focus {
   border-color: #650300;
-  -webkit-box-shadow: 0 0 0 0.05rem #AA0601;
-          box-shadow: 0 0 0 0.05rem #AA0601;
+  -webkit-box-shadow: 0 0 0 0.05rem #aa0601;
+          box-shadow: 0 0 0 0.05rem #aa0601;
 }
 
 .form-check-input {
@@ -56,14 +56,14 @@ button:focus {
 
 @media (min-width: 768px) {
   .classic .content {
-    color: #AA0601;
+    color: #aa0601;
   }
 }
 
 @media (min-width: 992px) {
   .classic .content {
     font-size: 40px;
-    color: #AA0601;
+    color: #aa0601;
   }
 }
 
@@ -96,11 +96,11 @@ img {
 }
 
 .bg-red {
-  background-color: #AA0601;
+  background-color: #aa0601;
 }
 
 .bg-pink {
-  background-color: #AA06010D;
+  background-color: #aa06010d;
 }
 
 .text-red {
@@ -224,6 +224,22 @@ img {
   padding: 24px 15px;
 }
 
+.footer .footer-title {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .footer-title {
+    font-size: 36px;
+  }
+}
+
 @media (min-width: 768px) {
   .footer {
     padding: 40px 15px;
@@ -236,19 +252,25 @@ img {
   }
 }
 
-.footer .fas, .footer .far, .footer .fab {
+.footer .fas,
+.footer .far,
+.footer .fab {
   font-size: 24px;
   margin-right: 8px;
 }
 
 @media (min-width: 768px) {
-  .footer .fas, .footer .far, .footer .fab {
+  .footer .fas,
+  .footer .far,
+  .footer .fab {
     margin-right: 12px;
   }
 }
 
 @media (min-width: 992px) {
-  .footer .fas, .footer .far, .footer .fab {
+  .footer .fas,
+  .footer .far,
+  .footer .fab {
     font-size: 36px;
     margin-right: 23px;
   }
